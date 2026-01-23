@@ -1,0 +1,17 @@
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\bin\Debug\net8.0\CapaNegocio.deps.json
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\bin\Debug\net8.0\CapaNegocio.dll
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\bin\Debug\net8.0\CapaNegocio.pdb
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\bin\Debug\net8.0\CapaEntidades.dll
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\bin\Debug\net8.0\CapaEntidades.pdb
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNegocio.AssemblyInfoInputs.cache
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNegocio.AssemblyInfo.cs
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNego.81B9D119.Up2Date
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNegocio.dll
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\refint\CapaNegocio.dll
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\CapaNegocio.pdb
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\obj\Debug\net8.0\ref\CapaNegocio.dll
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\bin\Debug\net8.0\CapaDatos.dll
+C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaNegocio\bin\Debug\net8.0\CapaDatos.pdb
