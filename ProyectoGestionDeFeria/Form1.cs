@@ -10,7 +10,7 @@ namespace ProyectoGestionDeFeria
         private void button1_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new FEventosAdmin());
-        } 
+        }
         //============================================================================
         private void button2_Click(object sender, EventArgs e)
         {
@@ -34,9 +34,11 @@ namespace ProyectoGestionDeFeria
             formularioHijo.Show();
         }
 
-       
-        
-
+        private void btnFormExtra_Click(object sender, EventArgs e)
+        {
+            FormExtra nuevoFormulario = new FormExtra();
+            nuevoFormulario.ShowDialog();
+        }
     }
 }
 

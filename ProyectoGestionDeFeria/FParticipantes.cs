@@ -168,5 +168,11 @@ namespace ProyectoGestionDeFeria
             rutaFotoParticipante = string.Empty;
         }
 
+        private void FParticipantes_Load(object sender, EventArgs e)
+        {
+            btnArchivo2.FlatStyle = FlatStyle.Flat;
+            btnArchivo2.FlatAppearance.BorderSize = 0;
+            btnArchivo2.FlatAppearance.BorderSize = 0;
+        }
     }
 }

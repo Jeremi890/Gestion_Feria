@@ -13,3 +13,19 @@ C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN O
 C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaDatos\obj\Debug\net8.0\refint\CapaDatos.dll
 C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaDatos\obj\Debug\net8.0\CapaDatos.pdb
 C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaDatos\obj\Debug\net8.0\ref\CapaDatos.dll
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\bin\Debug\net8.0\CapaDatos.deps.json
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\bin\Debug\net8.0\CapaDatos.dll
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\bin\Debug\net8.0\CapaDatos.pdb
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\bin\Debug\net8.0\CapaEntidades.dll
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\bin\Debug\net8.0\CapaEntidades.pdb
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.AssemblyInfoInputs.cache
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.AssemblyInfo.cs
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.sourcelink.json
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.csproj.Up2Date
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.dll
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\refint\CapaDatos.dll
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\CapaDatos.pdb
+C:\Users\PC_1\Desktop\Proyecto POE\Gestion_Feria\CapaDatos\obj\Debug\net8.0\ref\CapaDatos.dll

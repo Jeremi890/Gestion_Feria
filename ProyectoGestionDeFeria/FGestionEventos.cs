@@ -32,7 +32,7 @@ namespace ProyectoGestionDeFeria
                 CN_Emprendimiento objNegocio = new CN_Emprendimiento();
                 List<Emprendimiento> lista = objNegocio.ListarEmprendimientos();
 
-                ComboBox combo = cBoxGestionEmprendimiento; 
+                ComboBox combo = cBoxGestionEmprendimiento;
 
                 combo.DataSource = null;
                 combo.Items.Clear();
@@ -115,6 +115,11 @@ namespace ProyectoGestionDeFeria
             cBoxGestionEmprendimiento.SelectedIndex = -1;
             txtUbicacion.Clear();
             txtOrdenPresentacion.Clear();
+        }
+
+        private void dtHora_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

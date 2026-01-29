@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\smith\\.nuget\\packages\\": {}
+    "C:\\Users\\PC_1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\CapaEntidades.csproj",
+      "projectUniqueName": "C:\\Users\\PC_1\\Desktop\\Proyecto POE\\Gestion_Feria\\CapaEntidades\\CapaEntidades.csproj",
       "projectName": "CapaEntidades",
-      "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\CapaEntidades.csproj",
-      "packagesPath": "C:\\Users\\smith\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\obj\\",
+      "projectPath": "C:\\Users\\PC_1\\Desktop\\Proyecto POE\\Gestion_Feria\\CapaEntidades\\CapaEntidades.csproj",
+      "packagesPath": "C:\\Users\\PC_1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC_1\\Desktop\\Proyecto POE\\Gestion_Feria\\CapaEntidades\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\smith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

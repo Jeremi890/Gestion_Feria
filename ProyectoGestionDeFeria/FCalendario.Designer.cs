@@ -41,9 +41,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(29, 27);
+            label1.Location = new Point(8, 9);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(461, 45);
+            label1.Size = new Size(320, 30);
             label1.TabIndex = 0;
             label1.Text = "📅 Calendario de Actividades";
             // 
@@ -51,9 +52,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(29, 115);
+            label2.Location = new Point(20, 69);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(150, 25);
+            label2.Size = new Size(97, 15);
             label2.TabIndex = 1;
             label2.Text = "Filtrar por Fecha";
             // 
@@ -61,9 +63,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(329, 115);
+            label3.Location = new Point(230, 69);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(172, 25);
+            label3.Size = new Size(111, 15);
             label3.TabIndex = 3;
             label3.Text = "Filtrar por Facultad";
             label3.Click += label3_Click;
@@ -73,9 +76,10 @@
             btnBuscarCalendario.FlatAppearance.BorderSize = 0;
             btnBuscarCalendario.FlatAppearance.MouseOverBackColor = SystemColors.Highlight;
             btnBuscarCalendario.FlatStyle = FlatStyle.Flat;
-            btnBuscarCalendario.Location = new Point(757, 151);
+            btnBuscarCalendario.Location = new Point(530, 91);
+            btnBuscarCalendario.Margin = new Padding(2);
             btnBuscarCalendario.Name = "btnBuscarCalendario";
-            btnBuscarCalendario.Size = new Size(53, 34);
+            btnBuscarCalendario.Size = new Size(37, 20);
             btnBuscarCalendario.TabIndex = 5;
             btnBuscarCalendario.Text = "🔍";
             btnBuscarCalendario.UseVisualStyleBackColor = true;
@@ -84,34 +88,37 @@
             // dtCalendario
             // 
             dtCalendario.Format = DateTimePickerFormat.Short;
-            dtCalendario.Location = new Point(29, 154);
+            dtCalendario.Location = new Point(20, 92);
+            dtCalendario.Margin = new Padding(2);
             dtCalendario.Name = "dtCalendario";
-            dtCalendario.Size = new Size(197, 31);
+            dtCalendario.Size = new Size(139, 23);
             dtCalendario.TabIndex = 7;
             // 
             // cBoxFiltrarFacultad
             // 
             cBoxFiltrarFacultad.FormattingEnabled = true;
             cBoxFiltrarFacultad.Items.AddRange(new object[] { "TODAS LAS FACULTADES", "ADMINISTRACION CENTRAL", "ARQUITECTURA Y URBANISMO", "CIENCIAS ADMINISTRATIVAS", "CIENCIAS AGRARIAS", "CIENCIAS DE LA ACTIVIDAD FÍSICA", "CIENCIAS ECONÓMICAS", "CIENCIAS MATEMÁTICAS Y FÍSICAS" });
-            cBoxFiltrarFacultad.Location = new Point(329, 153);
+            cBoxFiltrarFacultad.Location = new Point(230, 92);
+            cBoxFiltrarFacultad.Margin = new Padding(2);
             cBoxFiltrarFacultad.Name = "cBoxFiltrarFacultad";
-            cBoxFiltrarFacultad.Size = new Size(422, 33);
+            cBoxFiltrarFacultad.Size = new Size(297, 23);
             cBoxFiltrarFacultad.TabIndex = 8;
             // 
             // flowPanelEventos
             // 
             flowPanelEventos.AutoScroll = true;
             flowPanelEventos.BackColor = Color.WhiteSmoke;
-            flowPanelEventos.Location = new Point(12, 214);
+            flowPanelEventos.Location = new Point(8, 128);
+            flowPanelEventos.Margin = new Padding(2);
             flowPanelEventos.Name = "flowPanelEventos";
-            flowPanelEventos.Size = new Size(798, 431);
+            flowPanelEventos.Size = new Size(559, 259);
             flowPanelEventos.TabIndex = 9;
             // 
             // FCalendario
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(822, 657);
+            ClientSize = new Size(575, 394);
             Controls.Add(flowPanelEventos);
             Controls.Add(cBoxFiltrarFacultad);
             Controls.Add(dtCalendario);
@@ -120,6 +127,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "FCalendario";
             Text = "FCalendario";
             ResumeLayout(false);

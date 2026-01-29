@@ -33,73 +33,125 @@
             btnGaleria = new Button();
             btnVotacion = new Button();
             panelModuloEstudiante = new Panel();
+            panelizquierdo = new Panel();
+            panelizquierdo.SuspendLayout();
             SuspendLayout();
             // 
             // btnConsultarEmprendimientos
             // 
-            btnConsultarEmprendimientos.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnConsultarEmprendimientos.Location = new Point(12, 32);
+            btnConsultarEmprendimientos.AutoSize = true;
+            btnConsultarEmprendimientos.BackColor = Color.FromArgb(0, 64, 64);
+            btnConsultarEmprendimientos.Cursor = Cursors.Hand;
+            btnConsultarEmprendimientos.FlatStyle = FlatStyle.Flat;
+            btnConsultarEmprendimientos.Font = new Font("Gadugi", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnConsultarEmprendimientos.ForeColor = SystemColors.ButtonHighlight;
+            btnConsultarEmprendimientos.Location = new Point(22, 55);
+            btnConsultarEmprendimientos.Margin = new Padding(0);
             btnConsultarEmprendimientos.Name = "btnConsultarEmprendimientos";
-            btnConsultarEmprendimientos.Size = new Size(272, 34);
+            btnConsultarEmprendimientos.Size = new Size(192, 48);
             btnConsultarEmprendimientos.TabIndex = 0;
-            btnConsultarEmprendimientos.Text = "Consultar Emprendimientos";
-            btnConsultarEmprendimientos.UseVisualStyleBackColor = true;
+            btnConsultarEmprendimientos.Text = " ";
+            btnConsultarEmprendimientos.TextAlign = ContentAlignment.MiddleRight;
+            btnConsultarEmprendimientos.UseVisualStyleBackColor = false;
             btnConsultarEmprendimientos.Click += btnConsultarEmprendimientos_Click;
             // 
             // btnCalendario2
             // 
-            btnCalendario2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCalendario2.Location = new Point(350, 32);
+            btnCalendario2.AutoSize = true;
+            btnCalendario2.BackColor = Color.FromArgb(0, 64, 64);
+            btnCalendario2.Cursor = Cursors.Hand;
+            btnCalendario2.FlatStyle = FlatStyle.Flat;
+            btnCalendario2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCalendario2.ForeColor = SystemColors.ButtonHighlight;
+            btnCalendario2.Location = new Point(22, 113);
+            btnCalendario2.Margin = new Padding(0);
             btnCalendario2.Name = "btnCalendario2";
-            btnCalendario2.Size = new Size(112, 34);
+            btnCalendario2.Size = new Size(192, 48);
             btnCalendario2.TabIndex = 1;
-            btnCalendario2.Text = "Calendario";
-            btnCalendario2.UseVisualStyleBackColor = true;
+            btnCalendario2.Text = "CALENDARIO";
+            btnCalendario2.TextAlign = ContentAlignment.MiddleRight;
+            btnCalendario2.UseVisualStyleBackColor = false;
             btnCalendario2.Click += btnCalendario2_Click;
             // 
             // btnGaleria
             // 
-            btnGaleria.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnGaleria.Location = new Point(530, 32);
+            btnGaleria.AutoSize = true;
+            btnGaleria.BackColor = Color.FromArgb(0, 64, 64);
+            btnGaleria.Cursor = Cursors.Hand;
+            btnGaleria.FlatStyle = FlatStyle.Flat;
+            btnGaleria.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGaleria.ForeColor = SystemColors.ButtonHighlight;
+            btnGaleria.Location = new Point(22, 171);
+            btnGaleria.Margin = new Padding(0);
             btnGaleria.Name = "btnGaleria";
-            btnGaleria.Size = new Size(112, 34);
-            btnGaleria.TabIndex = 2;
-            btnGaleria.Text = "Galeria";
-            btnGaleria.UseVisualStyleBackColor = true;
+            btnGaleria.Size = new Size(192, 48);
+            btnGaleria.TabIndex = 3;
+            btnGaleria.Text = "GALERIA";
+            btnGaleria.TextAlign = ContentAlignment.MiddleRight;
+            btnGaleria.UseVisualStyleBackColor = false;
             btnGaleria.Click += btnGaleria_Click;
             // 
             // btnVotacion
             // 
-            btnVotacion.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnVotacion.Location = new Point(707, 32);
+            btnVotacion.AutoSize = true;
+            btnVotacion.BackColor = Color.FromArgb(0, 64, 64);
+            btnVotacion.Cursor = Cursors.Hand;
+            btnVotacion.FlatAppearance.BorderSize = 0;
+            btnVotacion.FlatStyle = FlatStyle.Flat;
+            btnVotacion.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVotacion.ForeColor = SystemColors.ButtonHighlight;
+            btnVotacion.Location = new Point(22, 230);
+            btnVotacion.Margin = new Padding(0);
             btnVotacion.Name = "btnVotacion";
-            btnVotacion.Size = new Size(112, 34);
+            btnVotacion.Size = new Size(192, 48);
             btnVotacion.TabIndex = 3;
-            btnVotacion.Text = "Votacion";
-            btnVotacion.UseVisualStyleBackColor = true;
+            btnVotacion.Text = "VOTACION";
+            btnVotacion.TextAlign = ContentAlignment.MiddleRight;
+            btnVotacion.UseVisualStyleBackColor = false;
             btnVotacion.Click += btnVotacion_Click;
             // 
             // panelModuloEstudiante
             // 
-            panelModuloEstudiante.BackColor = SystemColors.ActiveCaption;
-            panelModuloEstudiante.Location = new Point(12, 92);
+            panelModuloEstudiante.BackColor = Color.SteelBlue;
+            panelModuloEstudiante.BorderStyle = BorderStyle.FixedSingle;
+            panelModuloEstudiante.Dock = DockStyle.Fill;
+            panelModuloEstudiante.Location = new Point(214, 0);
+            panelModuloEstudiante.Margin = new Padding(2);
             panelModuloEstudiante.Name = "panelModuloEstudiante";
-            panelModuloEstudiante.Size = new Size(807, 551);
+            panelModuloEstudiante.Size = new Size(665, 473);
             panelModuloEstudiante.TabIndex = 4;
+            // 
+            // panelizquierdo
+            // 
+            panelizquierdo.BackColor = Color.Lavender;
+            panelizquierdo.Controls.Add(btnConsultarEmprendimientos);
+            panelizquierdo.Controls.Add(btnVotacion);
+            panelizquierdo.Controls.Add(btnCalendario2);
+            panelizquierdo.Controls.Add(btnGaleria);
+            panelizquierdo.Dock = DockStyle.Left;
+            panelizquierdo.ForeColor = SystemColors.ActiveCaptionText;
+            panelizquierdo.Location = new Point(0, 0);
+            panelizquierdo.Name = "panelizquierdo";
+            panelizquierdo.Size = new Size(214, 473);
+            panelizquierdo.TabIndex = 5;
+            panelizquierdo.Paint += panelizquierdo_Paint;
             // 
             // FModuloEstudiante
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(831, 655);
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoSize = true;
+            BackColor = SystemColors.ButtonHighlight;
+            ClientSize = new Size(879, 473);
             Controls.Add(panelModuloEstudiante);
-            Controls.Add(btnVotacion);
-            Controls.Add(btnGaleria);
-            Controls.Add(btnCalendario2);
-            Controls.Add(btnConsultarEmprendimientos);
+            Controls.Add(panelizquierdo);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "FModuloEstudiante";
             Text = "FModuloEstudiante";
+            Load += FModuloEstudiante_Load;
+            panelizquierdo.ResumeLayout(false);
+            panelizquierdo.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -110,5 +162,6 @@
         private Button btnGaleria;
         private Button btnVotacion;
         private Panel panelModuloEstudiante;
+        private Panel panelizquierdo;
     }
 }
