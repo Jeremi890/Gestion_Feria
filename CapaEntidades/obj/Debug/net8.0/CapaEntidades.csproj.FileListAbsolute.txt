@@ -1,11 +1,11 @@
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\bin\Debug\net8.0\CapaEntidades.deps.json
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\bin\Debug\net8.0\CapaEntidades.dll
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\bin\Debug\net8.0\CapaEntidades.pdb
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\CapaEntidades.AssemblyInfoInputs.cache
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\CapaEntidades.AssemblyInfo.cs
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\CapaEntidades.csproj.CoreCompileInputs.cache
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\CapaEntidades.dll
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\refint\CapaEntidades.dll
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\CapaEntidades.pdb
-C:\Users\smith\OneDrive\Desktop\TAREAS DE UNIVERSIDAD\SEMESTRE V\PROGRAMACIÓN ORIENTADA A EVENTOS\PROYECTO POE\CapaEntidades\obj\Debug\net8.0\ref\CapaEntidades.dll
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\bin\Debug\net8.0\CapaEntidades.deps.json
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\bin\Debug\net8.0\CapaEntidades.dll
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\bin\Debug\net8.0\CapaEntidades.pdb
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\CapaEntidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\CapaEntidades.AssemblyInfoInputs.cache
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\CapaEntidades.AssemblyInfo.cs
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\CapaEntidades.dll
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\refint\CapaEntidades.dll
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\CapaEntidades.pdb
+C:\Users\smith\OneDrive\Desktop\PROYECTOCLON\Gestion_Feria-Mejora_Dise-o_2\CapaEntidades\obj\Debug\net8.0\ref\CapaEntidades.dll

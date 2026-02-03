@@ -9,11 +9,12 @@ namespace CapaDatos
 {
     public class CD_Conexion
     {
-        private string cadena = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DB_GestionFeria;Integrated Security=True";
+        string cadenaConexionBD = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DB_GestionFeria;Integrated Security=True";
+        //"Server=localhost;Database=DB_GestionFeria;Trusted_Connection=True;";
 
         public SqlConnection LeerCadena()
         {
-            return new SqlConnection(cadena);
+            return new SqlConnection(cadenaConexionBD);
         }
     }
 }

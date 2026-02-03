@@ -23,10 +23,15 @@ namespace CapaNegocio
             }
             return objDatos.Registrar(obj, out mensaje);
         }
-
+        //===========================================================================
         public DataTable ListarParticipantesPorEmprendimiento(int idEmprendimiento)
         {
             return objDatos.ListarPorEmprendimiento(idEmprendimiento);
+        }
+        //===========================================================================
+        public bool EditarParticipante(int id, string nombre, string apellido, string cargo, out string Mensaje)
+        {
+            return objDatos.EditarParticipante(id, nombre, apellido, cargo, out Mensaje);
         }
     }
 }

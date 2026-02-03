@@ -121,7 +121,13 @@ namespace ProyectoGestionDeFeria
                     if (int.TryParse(cBoxSeleccionarERP.SelectedValue.ToString(), out id))
                     {
                         CN_Participante objNegocio = new CN_Participante();
+                        dVParticipante.AutoGenerateColumns = false;
                         dVParticipante.DataSource = objNegocio.ListarParticipantesPorEmprendimiento(id);
+                    }
+                   
+                    if (dVParticipante.Columns["IdParticipante"] != null)
+                    {
+                        dVParticipante.Columns["IdParticipante"].Visible = false;
                     }
                 }
             }
@@ -167,6 +173,37 @@ namespace ProyectoGestionDeFeria
             cBoxCargo.SelectedIndex = -1;
             rutaFotoParticipante = string.Empty;
         }
+        //===================================================================================
+        private void FParticipantes_Load(object sender, EventArgs e)
+        {
+            panelSupRegistro.BackColor = Color.FromArgb(21, 113, 59);
+            btnArchivo2.FlatStyle = FlatStyle.Flat;
+            btnArchivo2.FlatAppearance.BorderSize = 0;
+            btnArchivo2.FlatAppearance.BorderSize = 0;
+        }
+        //==================================================================================
+        private void dVParticipante_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
 
+            DataGridViewRow fila = dVParticipante.Rows[e.RowIndex];
+            if (fila.Cells["IdParticipante"].Value == null) return;
+
+            int id = Convert.ToInt32(fila.Cells["IdParticipante"].Value);
+            string nombre = fila.Cells["Nombre"].Value?.ToString() ?? "";
+            string apellido = fila.Cells["Apellido"].Value?.ToString() ?? "";
+            string cargo = fila.Cells["Cargo"].Value?.ToString() ?? "";
+
+            CN_Participante objNegocio = new CN_Participante();
+            string mensaje;
+
+            bool exito = objNegocio.EditarParticipante(id, nombre, apellido, cargo, out mensaje);
+
+            if (!exito)
+            {
+                MessageBox.Show("Error al guardar: " + mensaje);
+                CargarParticipantes();
+            }
+        }
     }
 }

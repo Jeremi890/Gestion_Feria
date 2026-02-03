@@ -64,13 +64,15 @@ namespace CapaDatos
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrarEmprendimiento", ocon);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("Nombre", obj.NombreEmprendimiento);
-                    cmd.Parameters.AddWithValue("Descripcion", obj.Descripcion);
-                    cmd.Parameters.AddWithValue("Rubro", obj.Rubro);
-                    cmd.Parameters.AddWithValue("Facultad", obj.Facultad);
-                    cmd.Parameters.AddWithValue("RutaFoto", obj.RutaFoto);
+                    cmd.Parameters.AddWithValue("@Nombre", obj.NombreEmprendimiento);
+                    cmd.Parameters.AddWithValue("@Descripcion", obj.Descripcion);
+                    cmd.Parameters.AddWithValue("@Rubro", obj.Rubro);
+                    cmd.Parameters.AddWithValue("@Facultad", obj.Facultad);
+                    cmd.Parameters.AddWithValue("@RutaFoto", obj.RutaFoto);
 
                     ocon.Open();
+
+                    // ExecuteNonQuery devuelve el número de filas afectadas
                     int filas = cmd.ExecuteNonQuery();
                     if (filas > 0) respuesta = true;
                 }

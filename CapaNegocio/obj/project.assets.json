@@ -1492,11 +1492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaNegocio\\CapaNegocio.csproj",
+      "projectUniqueName": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaNegocio\\CapaNegocio.csproj",
       "projectName": "CapaNegocio",
-      "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaNegocio\\CapaNegocio.csproj",
+      "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaNegocio\\CapaNegocio.csproj",
       "packagesPath": "C:\\Users\\smith\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaNegocio\\obj\\",
+      "outputPath": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaNegocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\smith\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1513,11 +1513,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaDatos\\CapaDatos.csproj": {
-              "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaDatos\\CapaDatos.csproj"
+            "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaDatos\\CapaDatos.csproj": {
+              "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaDatos\\CapaDatos.csproj"
             },
-            "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\CapaEntidades.csproj": {
-              "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\CapaEntidades.csproj"
+            "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaEntidades\\CapaEntidades.csproj": {
+              "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaEntidades\\CapaEntidades.csproj"
             }
           }
         }

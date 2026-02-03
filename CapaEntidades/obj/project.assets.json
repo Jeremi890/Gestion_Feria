@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\CapaEntidades.csproj",
+      "projectUniqueName": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaEntidades\\CapaEntidades.csproj",
       "projectName": "CapaEntidades",
-      "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\CapaEntidades.csproj",
+      "projectPath": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaEntidades\\CapaEntidades.csproj",
       "packagesPath": "C:\\Users\\smith\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\smith\\OneDrive\\Desktop\\TAREAS DE UNIVERSIDAD\\SEMESTRE V\\PROGRAMACIÓN ORIENTADA A EVENTOS\\PROYECTO POE\\CapaEntidades\\obj\\",
+      "outputPath": "C:\\Users\\smith\\OneDrive\\Desktop\\PROYECTOCLON\\Gestion_Feria-Mejora_Dise-o_2\\CapaEntidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\smith\\AppData\\Roaming\\NuGet\\NuGet.Config",

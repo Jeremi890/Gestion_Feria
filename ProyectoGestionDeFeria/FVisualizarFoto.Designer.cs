@@ -37,35 +37,42 @@
             // 
             // pBoxFotoGrande
             // 
+            pBoxFotoGrande.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pBoxFotoGrande.BorderStyle = BorderStyle.Fixed3D;
-            pBoxFotoGrande.Location = new Point(12, 12);
+            pBoxFotoGrande.Location = new Point(8, 7);
+            pBoxFotoGrande.Margin = new Padding(2, 2, 2, 2);
             pBoxFotoGrande.Name = "pBoxFotoGrande";
-            pBoxFotoGrande.Size = new Size(450, 628);
+            pBoxFotoGrande.Size = new Size(316, 378);
             pBoxFotoGrande.TabIndex = 0;
             pBoxFotoGrande.TabStop = false;
             // 
             // lstComentarios
             // 
+            lstComentarios.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lstComentarios.FormattingEnabled = true;
-            lstComentarios.ItemHeight = 25;
-            lstComentarios.Location = new Point(468, 12);
+            lstComentarios.ItemHeight = 15;
+            lstComentarios.Location = new Point(328, 7);
+            lstComentarios.Margin = new Padding(2, 2, 2, 2);
             lstComentarios.Name = "lstComentarios";
-            lstComentarios.Size = new Size(318, 329);
+            lstComentarios.Size = new Size(224, 199);
             lstComentarios.TabIndex = 1;
             // 
             // txtNuevoComentario
             // 
-            txtNuevoComentario.Location = new Point(468, 368);
+            txtNuevoComentario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtNuevoComentario.Location = new Point(328, 221);
+            txtNuevoComentario.Margin = new Padding(2, 2, 2, 2);
             txtNuevoComentario.Multiline = true;
             txtNuevoComentario.Name = "txtNuevoComentario";
-            txtNuevoComentario.Size = new Size(318, 202);
+            txtNuevoComentario.Size = new Size(224, 123);
             txtNuevoComentario.TabIndex = 2;
             // 
             // btnEnviar
             // 
-            btnEnviar.Location = new Point(578, 596);
+            btnEnviar.Location = new Point(405, 358);
+            btnEnviar.Margin = new Padding(2, 2, 2, 2);
             btnEnviar.Name = "btnEnviar";
-            btnEnviar.Size = new Size(112, 34);
+            btnEnviar.Size = new Size(78, 20);
             btnEnviar.TabIndex = 3;
             btnEnviar.Text = "ENVIAR";
             btnEnviar.UseVisualStyleBackColor = true;
@@ -73,13 +80,14 @@
             // 
             // FVisualizarFoto
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 652);
+            ClientSize = new Size(559, 391);
             Controls.Add(btnEnviar);
             Controls.Add(txtNuevoComentario);
             Controls.Add(lstComentarios);
             Controls.Add(pBoxFotoGrande);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FVisualizarFoto";
             Text = "FVisualizarFoto";
             ((System.ComponentModel.ISupportInitialize)pBoxFotoGrande).EndInit();
