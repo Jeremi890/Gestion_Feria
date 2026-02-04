@@ -12,7 +12,7 @@ namespace CapaDatos
     public class CD_Evento
     {
         private CD_Conexion conexion = new CD_Conexion();
-
+        //================================================================================
         public List<Evento> Listar()
         {
             List<Evento> lista = new List<Evento>();
@@ -58,7 +58,7 @@ namespace CapaDatos
             }
             return lista;
         }
-
+        //================================================================================
         public bool Registrar(Evento obj, out string Mensaje)
         {
             bool respuesta = false;

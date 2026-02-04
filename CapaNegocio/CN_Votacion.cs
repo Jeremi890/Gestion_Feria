@@ -21,7 +21,6 @@ namespace CapaNegocio
 
         public DataTable ContarVotaciones()
         {
-            // Devuelve la tabla lista para la creación de gráfico
             return objDatos.ContarVotos();
         }
     }

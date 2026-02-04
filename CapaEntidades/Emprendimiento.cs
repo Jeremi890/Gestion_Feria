@@ -16,7 +16,7 @@ namespace CapaEntidades
         public string RutaFoto { get; set; }
         public DateTime FechaRegistro { get; set; }
         public bool Estado { get; set; }
-
+        //================================================================================
         public Emprendimiento()
         {
             IdEmprendimiento = 0;

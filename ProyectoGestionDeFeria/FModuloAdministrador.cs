@@ -101,23 +101,22 @@ namespace ProyectoGestionDeFeria
             txtDescripcion1.Clear();
             rutaFotoEmprendimiento = string.Empty;
         }
-
+        //================================================================================
         private void FModuloAdministrador_Load(object sender, EventArgs e)
         {
             panelRegistroEmp.BackColor = Color.FromArgb(21, 113, 59);
         }
-
+        //================================================================================
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        //================================================================================
         private void FModuloAdministrador_Load_1(object sender, EventArgs e)
         {
             btnArchivo.FlatAppearance.MouseOverBackColor = btnArchivo.BackColor;
             btnArchivo.FlatAppearance.MouseDownBackColor = btnArchivo.BackColor;
             btnArchivo.TabStop = false;
-            // Quitar el borde visual
             btnArchivo.FlatStyle = FlatStyle.Flat;
             btnArchivo.FlatAppearance.BorderSize = 0;
         }

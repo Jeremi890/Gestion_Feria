@@ -54,7 +54,7 @@ namespace ProyectoGestionDeFeria
         {
             try
             {
-                // 1. VALIDACIONES
+                // 1. VALIDACIÓN
                 if (cBoxCategoriaPremio.SelectedIndex == -1)
                 {
                     MessageBox.Show("Debe seleccionar una Categoría.");
@@ -70,38 +70,46 @@ namespace ProyectoGestionDeFeria
                     MessageBox.Show("Debe seleccionar una Posición.");
                     return;
                 }
+                // 2. VALIDACIÓN DE DUPLICADOS
+                CN_Resultado objNegocio = new CN_Resultado();
+                string categoriaActual = cBoxCategoriaPremio.Text;
+                int nuevaPosicion = cBoxPosicionGanador.SelectedIndex + 1;
+                int idEmprendimiento = Convert.ToInt32(cBoxEmprendimientoGanador.SelectedValue);
 
-                // 2. CREACIÓN DE OBJETO
+                DataTable existentes = objNegocio.ListarResultados(categoriaActual);
+
+                foreach (DataRow fila in existentes.Rows)
+                {
+                    // A) Se verifica que el emprendimiento no tenga ya una premiación
+                    if (Convert.ToInt32(fila["IdEmprendimiento"]) == idEmprendimiento)
+                    {
+                        MessageBox.Show($"El emprendimiento '{fila["NombreEmprendimiento"]}' ya tiene un premio en esta categoría.");
+                        return;
+                    }
+
+                    // B) Se valida que una posición no esté ya registrada
+                    if (Convert.ToInt32(fila["Posicion"]) == nuevaPosicion)
+                    {
+                        MessageBox.Show($"La posición {nuevaPosicion} ya está ocupada por '{fila["NombreEmprendimiento"]}'.");
+                        return;
+                    }
+                }
+                // 3. CREACIÓN Y GUARDADO
+
                 Resultado objResultado = new Resultado();
 
-                // Validación del ID Emprendimiento
-                if (cBoxEmprendimientoGanador.SelectedValue != null &&
-                    int.TryParse(cBoxEmprendimientoGanador.SelectedValue.ToString(), out int idEmpre))
-                {
-                    objResultado.IdEmprendimiento = idEmpre;
-                }
-                else
-                {
-                    MessageBox.Show("Error al leer el emprendimiento seleccionado.");
-                    return;
-                }
+                objResultado.IdEmprendimiento = idEmprendimiento;
+                objResultado.CategoriaPremio = categoriaActual;
+                objResultado.Posicion = nuevaPosicion;
 
-                // Se Asigna Categoría
-                objResultado.CategoriaPremio = cBoxCategoriaPremio.Text;
-                objResultado.Posicion = cBoxPosicionGanador.SelectedIndex + 1;
-
-                // 3. GUARDADO
-                CN_Resultado objNegocio = new CN_Resultado();
                 string mensaje = string.Empty;
-
                 bool respuesta = objNegocio.RegistrarResultado(objResultado, out mensaje);
 
                 if (respuesta)
                 {
                     MessageBox.Show("Resultado registrado correctamente");
-                    CargarResultados();
 
-                    // Limpiar campos
+                    CargarResultados();
                     cBoxEmprendimientoGanador.SelectedIndex = -1;
                     cBoxPosicionGanador.SelectedIndex = -1;
                 }
@@ -121,7 +129,30 @@ namespace ProyectoGestionDeFeria
             try
             {
                 CN_Resultado objNegocio = new CN_Resultado();
-                dVPremioRegistrado.DataSource = objNegocio.ListarResultados();
+                string filtro = cBoxCategoriaPremio.Text;
+
+                dVPremioRegistrado.DataSource = objNegocio.ListarResultados(filtro);
+                dVPremioRegistrado.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                // 1. Ocultar columnas que no queremos ver (IDs)
+                if (dVPremioRegistrado.Columns["IdResultado"] != null)
+                    dVPremioRegistrado.Columns["IdResultado"].Visible = false;
+
+                if (dVPremioRegistrado.Columns["IdEmprendimiento"] != null)
+                    dVPremioRegistrado.Columns["IdEmprendimiento"].Visible = false;
+
+                // 2. Agregar botón de eliminar (Solo si no existe ya)
+                if (dVPremioRegistrado.Columns["btnEliminar"] == null)
+                {
+                    DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+                    btn.Name = "btnEliminar";
+                    btn.HeaderText = "Acción";
+                    btn.Text = "Eliminar";
+                    btn.UseColumnTextForButtonValue = true; // Para que diga "Eliminar"
+                    btn.DefaultCellStyle.BackColor = Color.IndianRed;
+                    btn.DefaultCellStyle.ForeColor = Color.White;
+                    dVPremioRegistrado.Columns.Add(btn);
+                }
             }
             catch (Exception ex)
             {
@@ -188,5 +219,34 @@ namespace ProyectoGestionDeFeria
             }
 
         }
+        //==================================================================================
+        private void cBoxCategoriaPremio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarResultados();
+        }
+        //===================================================================================
+        private void dVPremioRegistrado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dVPremioRegistrado.Columns[e.ColumnIndex].Name == "btnEliminar" && e.RowIndex >= 0)
+            {
+                DialogResult pregunta = MessageBox.Show("¿Desea eliminar este registro de premiación?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (pregunta == DialogResult.Yes)
+                {
+                    int idResultado = Convert.ToInt32(dVPremioRegistrado.Rows[e.RowIndex].Cells["IdResultado"].Value);
+                    CN_Resultado objNegocio = new CN_Resultado();
+                    string mensaje = string.Empty;
+
+                    if (objNegocio.EliminarResultado(idResultado, out mensaje))
+                    {
+                        CargarResultados();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo eliminar: " + mensaje);
+                    }
+                }
+    }
+    }
     }
 }

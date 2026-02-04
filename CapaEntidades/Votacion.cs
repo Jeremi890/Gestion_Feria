@@ -14,7 +14,7 @@ namespace CapaEntidades
         public DateTime FechaVotacion { get; set; }
 
         public string NombreEmprendimiento { get; set; }
-
+        //================================================================================
         public Votacion()
         {
             IdVotacion = 0;

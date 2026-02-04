@@ -31,21 +31,14 @@ namespace ProyectoGestionDeFeria
                 List<Emprendimiento> lista = objNegocio.ListarEmprendimientos();
 
                 cBoxSeleccionarERP.SelectedIndexChanged -= cBoxSeleccionarERP_SelectedIndexChanged;
-
-                // Limpieza
                 cBoxSeleccionarERP.DataSource = null;
                 cBoxSeleccionarERP.Items.Clear();
 
                 if (lista.Count > 0)
                 {
-                    // Esto le enseña al ComboBox qué campo es texto y qué campo es valor
                     cBoxSeleccionarERP.DisplayMember = "NombreEmprendimiento";
                     cBoxSeleccionarERP.ValueMember = "IdEmprendimiento";
-
-                    // Se asigna la lista
                     cBoxSeleccionarERP.DataSource = lista;
-
-                    // Se limpia la seleccion visual
                     cBoxSeleccionarERP.SelectedIndex = -1;
                 }
 

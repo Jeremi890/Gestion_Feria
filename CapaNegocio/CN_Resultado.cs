@@ -23,11 +23,15 @@ namespace CapaNegocio
             }
             return objDatos.Registrar(obj, out mensaje);
         }
-
-        public DataTable ListarResultados()
+        //=================================================================================
+        public DataTable ListarResultados(string categoria = "")
         {
-            // Devuelve la tabla lista desde SQL para consvertirlo en PDF
-            return objDatos.Listar();
+            return objDatos.Listar(categoria);
+        }
+        //================================================================================
+        public bool EliminarResultado(int idResultado, out string mensaje)
+        {
+            return objDatos.Eliminar(idResultado, out mensaje);
         }
     }
 

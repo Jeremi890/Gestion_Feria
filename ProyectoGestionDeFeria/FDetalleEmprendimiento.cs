@@ -19,7 +19,7 @@ namespace ProyectoGestionDeFeria
             InitializeComponent();
             _idEmprendimiento = idRecibido;
         }
-
+        //================================================================================
         private void FDetalleEmprendimiento_Load(object sender, EventArgs e)
         {
             CargarDatos();

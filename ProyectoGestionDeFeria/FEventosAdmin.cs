@@ -55,40 +55,30 @@ namespace ProyectoGestionDeFeria
             PanelDesarrollo1.Tag = formularioHijo;
             formularioHijo.Show();
         }
-
+        //================================================================================
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        //================================================================================
         private void AbrirFormularioEnPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        //================================================================================
         private void FEventosAdmin_Load(object sender, EventArgs e)
         {
-            // Quitar el borde visual
             btnRegistrarEmprendimiento.FlatStyle = FlatStyle.Flat;
             btnRegistrarEmprendimiento.FlatAppearance.BorderSize = 0;
-
-            // Quitar márgenes de diseño
             btnRegistrarEmprendimiento.Margin = new Padding(0);
-            // Quitar el borde visual
             btnParticipantes.FlatStyle = FlatStyle.Flat;
             btnParticipantes.FlatAppearance.BorderSize = 0;
-
-            // Quitar márgenes de diseño
             btnResultados.Margin = new Padding(0);
-            // Quitar el borde visual
             btnResultados.FlatStyle = FlatStyle.Flat;
             btnResultados.FlatAppearance.BorderSize = 0;
-            // Quitar márgenes de diseño
             btnGestionEventos.Margin = new Padding(0);
-            // Quitar el borde visual
             btnGestionEventos.FlatStyle = FlatStyle.Flat;
             btnGestionEventos.FlatAppearance.BorderSize = 0;
-
             panelizquierdoAdmin.BackColor = Color.FromArgb(21, 113, 59);
             btnRegistrarEmprendimiento.Text = "REGISTRAR" + Environment.NewLine + "EMPRENDIMIENTO";
         }

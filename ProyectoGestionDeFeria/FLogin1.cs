@@ -17,7 +17,7 @@ namespace ProyectoGestionDeFeria
         {
             InitializeComponent();
         }
-
+        //================================================================================
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtClave.Text))

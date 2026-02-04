@@ -11,7 +11,7 @@ namespace CapaNegocio
     public class CN_Comentario
     {
         private CD_Comentario objDatos = new CD_Comentario();
-
+        //================================================================================
         public bool RegistrarComentario(int idEmprendimiento, string texto, out string mensaje)
         {
             mensaje = string.Empty;
@@ -24,7 +24,7 @@ namespace CapaNegocio
 
             return objDatos.Registrar(idEmprendimiento, texto, out mensaje);
         }
-
+        //================================================================================
         public List<string> ListarComentariosPorEmprendimiento(int idEmprendimiento)
         {
             return objDatos.Listar(idEmprendimiento);

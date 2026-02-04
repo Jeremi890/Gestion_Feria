@@ -30,14 +30,11 @@ namespace ProyectoGestionDeFeria
 
             CN_Emprendimiento objNegocio = new CN_Emprendimiento();
             List<Emprendimiento> lista;
-
-            // Búsqueda
             if (string.IsNullOrEmpty(filtro))
                 lista = objNegocio.ListarEmprendimientos();
             else
                 lista = objNegocio.BuscarEmprendimiento(filtro);
 
-            // Tarjetas a generar
             foreach (var emp in lista)
             {
                 if (!likesSimulados.ContainsKey(emp.IdEmprendimiento))
@@ -47,7 +44,6 @@ namespace ProyectoGestionDeFeria
                 flowPanelGaleria.Controls.Add(tarjeta);
             }
 
-            // Mensaje dentro de label que indiqe no existe coincidencias
             if (flowPanelGaleria.Controls.Count == 0)
             {
                 Label lbl = new Label

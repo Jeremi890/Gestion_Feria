@@ -12,8 +12,8 @@ namespace CapaDatos
     public class CD_Comentario
     {
         private CD_Conexion conexion = new CD_Conexion();
-
-        // 1. GUARDAR (Adaptado a tu SP: @Texto)
+        //================================================================================
+        // 1. GUARDAR
         public bool Registrar(int idEmprendimiento, string texto, out string Mensaje)
         {
             Mensaje = string.Empty;
@@ -23,8 +23,6 @@ namespace CapaDatos
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrarComentario", ocon);
                     cmd.CommandType = CommandType.StoredProcedure;
-
-                    // IMPORTANTE: Aquí usamos los nombres exactos de TU base de datos
                     cmd.Parameters.AddWithValue("@IdEmprendimiento", idEmprendimiento);
                     cmd.Parameters.AddWithValue("@Texto", texto);
 
@@ -40,7 +38,7 @@ namespace CapaDatos
             }
         }
 
-        // 2. LISTAR (Adaptado a tu tabla: columna 'Texto')
+        //================================================================================
         public List<string> Listar(int idEmprendimiento)
         {
             List<string> lista = new List<string>();
@@ -57,7 +55,6 @@ namespace CapaDatos
                     {
                         while (dr.Read())
                         {
-                            // Leemos la columna "Fecha" y "Texto" de tu tabla
                             string fecha = Convert.ToDateTime(dr["Fecha"]).ToString("dd/MM/yy HH:mm");
                             string textoDB = dr["Texto"].ToString();
 

@@ -23,30 +23,26 @@ using System.Windows.Forms;
                 ConfigurarContenedorPrincipal();
                 CargarVotaciones();
             }
-
+        //==================================================================================
             private void ConfigurarContenedorPrincipal()
             {
-                // Configuración del FlowLayoutPanel para comportamiento de rejilla
                 flowPanelVotacion.Dock = DockStyle.Fill;
                 flowPanelVotacion.AutoScroll = true;
                 flowPanelVotacion.FlowDirection = FlowDirection.LeftToRight;
-                flowPanelVotacion.WrapContents = true; // Permite que las tarjetas bajen a la siguiente fila
+                flowPanelVotacion.WrapContents = true;
                 flowPanelVotacion.Padding = new Padding(10);
 
-                // Evento para redimensionar tarjetas dinámicamente
                 this.Resize += (s, e) => AjustarRejillaTarjetas();
             }
-
+        //===================================================================================
             private void AjustarRejillaTarjetas()
             {
                 if (flowPanelVotacion.Controls.Count == 0) return;
 
-                flowPanelVotacion.SuspendLayout(); // Optimiza el rendimiento visual
+                flowPanelVotacion.SuspendLayout();
 
                 int margen = 25;
                 int anchoDisponible = flowPanelVotacion.ClientSize.Width - margen;
-
-                // Decidimos columnas: 2 si hay espacio suficiente (> 800px), si no, 1 columna
                 int columnas = anchoDisponible > 800 ? 2 : 1;
                 int nuevoAncho = (anchoDisponible / columnas) - 20;
 
@@ -60,7 +56,7 @@ using System.Windows.Forms;
 
                 flowPanelVotacion.ResumeLayout();
             }
-
+        //=====================================================================================
             private void CargarVotaciones()
             {
                 flowPanelVotacion.Controls.Clear();
@@ -87,14 +83,14 @@ using System.Windows.Forms;
                     flowPanelVotacion.Controls.Add(tarjeta);
                 }
 
-                AjustarRejillaTarjetas(); // Ajuste inicial
+                AjustarRejillaTarjetas();
             }
-
+        //======================================================================================
             private Panel CrearTarjetaVotacion(Emprendimiento emp)
             {
                 // A) Contenedor de la Tarjeta
                 Panel panelCard = new Panel();
-                panelCard.Size = new Size(350, 220); // Tamaño inicial
+                panelCard.Size = new Size(350, 220); 
                 panelCard.BackColor = Color.White;
                 panelCard.Margin = new Padding(10);
                 panelCard.BorderStyle = BorderStyle.FixedSingle;
@@ -108,7 +104,7 @@ using System.Windows.Forms;
                 lblTitulo.AutoSize = true;
                 lblTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
-                // C) Rubro (Anclado a la derecha)
+                // C) Rubro
                 Label lblRubro = new Label();
                 lblRubro.Text = emp.Rubro;
                 lblRubro.BackColor = Color.LightSkyBlue;
@@ -146,7 +142,7 @@ using System.Windows.Forms;
                     MessageBox.Show($"¡Voto registrado para {emp.NombreEmprendimiento}!");
                 };
 
-                // E) Caja de Comentarios (Anclaje total para estirarse)
+                // E) Caja de Comentarios
                 TextBox txtComentario = new TextBox();
                 txtComentario.Multiline = true;
                 txtComentario.Location = new Point(15, 100);

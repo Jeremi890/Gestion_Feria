@@ -12,7 +12,7 @@ namespace CapaEntidades
         public int IdEmprendimiento { get; set; }
         public string TextoComentario { get; set; }
         public DateTime FechaComentario { get; set; }
-
+        //================================================================================
         public Comentario()
         {
             IdComentario = 0;

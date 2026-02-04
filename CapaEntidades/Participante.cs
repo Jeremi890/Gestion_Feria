@@ -17,7 +17,7 @@ namespace CapaEntidades
         public DateTime FechaRegistro { get; set; }
 
         public string NombreEmprendimiento { get; set; }
-
+        //================================================================================
         public Participante()
         {
             IdParticipante = 0;
@@ -29,7 +29,7 @@ namespace CapaEntidades
             FechaRegistro = DateTime.Now;
             NombreEmprendimiento = string.Empty;
         }
-
+        //================================================================================
         public string NombreCompleto
         {
             get { return $"{Nombres} {Apellidos}"; }

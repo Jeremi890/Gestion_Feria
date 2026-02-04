@@ -58,36 +58,27 @@ namespace ProyectoGestionDeFeria
             panelPrincipal.Controls.Add(formularioHijo);
             formularioHijo.Show();
         }
-
+        //==========================================================================
         private void FModuloEstudiante_Load(object sender, EventArgs e)
         {
             panelizquierdo.BackColor = Color.FromArgb(29, 93, 117);
-            // Quitar el borde visual
             btnCalendario2.FlatStyle = FlatStyle.Flat;
             btnCalendario2.FlatAppearance.BorderSize = 0;
-
-            // Quitar márgenes de diseño
             btnCalendario2.Margin = new Padding(0);
-            // Quitar el borde visual
             btnConsultarEmprendimientos.FlatStyle = FlatStyle.Flat;
             btnConsultarEmprendimientos.FlatAppearance.BorderSize = 0;
-
-            // Quitar márgenes de diseño
             btnConsultarEmprendimientos.Margin = new Padding(0);
-            // Quitar el borde visual
             btnGaleria.FlatStyle = FlatStyle.Flat;
             btnGaleria.FlatAppearance.BorderSize = 0;
-
-            // Quitar márgenes de diseño
             btnGaleria.Margin = new Padding(0);
             btnConsultarEmprendimientos.Text = "CONSULTAR" + Environment.NewLine + "EMPRENDIMIENTO";
         }
-
+        //================================================================================
         private void panelizquierdo_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        //================================================================================
         private void pictureBox1_Click(object sender, EventArgs e)
         {
     

@@ -21,14 +21,14 @@ namespace ProyectoGestionDeFeria
         //=====================================================================================
         public FVisualizarFoto(int id, string nombre, string rutaFoto)
         {
-            InitializeComponent(); // Dibuja la ventana y los controles vacíos
+            InitializeComponent();
 
             _id = id;
             _ruta = rutaFoto;
             this.Text = "Álbum y Comentarios: " + nombre;
             //_________________________________________________________________________________
 
-            // 1. CARGAMOS IMAGEN
+            // 1. SE CARGA LA IMAGEN
             if (!string.IsNullOrEmpty(_ruta) && File.Exists(_ruta))
             {
                 pBoxFotoGrande.ImageLocation = _ruta;
@@ -39,7 +39,7 @@ namespace ProyectoGestionDeFeria
                 pBoxFotoGrande.BackColor = Color.MistyRose;
             }
 
-            // 2. CARGAMOS COMENTARIOS
+            // 2. SE CARGAN LOS COMENTARIOS
             CargarComentarios();
         }
         //=====================================================================================

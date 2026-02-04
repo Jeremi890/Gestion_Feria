@@ -15,7 +15,7 @@ namespace CapaEntidades
 
         public string NombreEmprendimiento { get; set; }
         public string Facultad { get; set; }
-
+        //================================================================================
         public Resultado()
         {
             IdResultado = 0;

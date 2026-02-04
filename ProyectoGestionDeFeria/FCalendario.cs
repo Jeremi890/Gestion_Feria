@@ -14,10 +14,12 @@ namespace ProyectoGestionDeFeria
 {
     public partial class FCalendario : Form
     {
+        //================================================================================
         public FCalendario()
         {
             InitializeComponent();
         }
+        //================================================================================
         private void FCalendario_Load(object sender, EventArgs e)
         {
             CargarEventos();

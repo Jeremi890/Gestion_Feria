@@ -18,6 +18,7 @@ namespace ProyectoGestionDeFeria
         {
             InitializeComponent();
         }
+        //================================================================================
         private void FConsultarEmprendimiento_Load(object sender, EventArgs e)
         {
             CargarEmprendimientos();
@@ -123,7 +124,7 @@ namespace ProyectoGestionDeFeria
         private void AbrirDetalle(int idEmprendimiento)
         {
             // Llamado al nuevo formulario
-            MessageBox.Show("Abriendo detalles del ID: " + idEmprendimiento);
+           //  MessageBox.Show("Abriendo detalles del ID: " + idEmprendimiento);
             
             FDetalleEmprendimiento formDetalle = new FDetalleEmprendimiento(idEmprendimiento);
             formDetalle.ShowDialog();

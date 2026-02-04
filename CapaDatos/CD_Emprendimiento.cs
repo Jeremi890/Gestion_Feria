@@ -12,6 +12,7 @@ namespace CapaDatos
     public class CD_Emprendimiento
     {
         private CD_Conexion conexion = new CD_Conexion();
+        //================================================================================
         public List<Emprendimiento> Listar()
         {
             List<Emprendimiento> lista = new List<Emprendimiento>();
@@ -51,7 +52,7 @@ namespace CapaDatos
             }
             return lista;
         }
-
+        //================================================================================
         // MÉTODO REGISTRAR: Manda los datos a SQL
         public bool Registrar(Emprendimiento obj, out string Mensaje)
         {

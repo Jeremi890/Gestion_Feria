@@ -12,7 +12,7 @@ namespace CapaDatos
     public class CD_Votacion
     {
         private CD_Conexion conexion = new CD_Conexion();
-
+        //================================================================================
         public bool Registrar(Votacion obj, out string Mensaje)
         {
             Mensaje = string.Empty;
@@ -29,7 +29,7 @@ namespace CapaDatos
                 catch (Exception ex) { Mensaje = ex.Message; return false; }
             }
         }
-
+        //================================================================================
         public DataTable ContarVotos()
         {
             DataTable tabla = new DataTable();
