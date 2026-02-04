@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CapaEntidades;
 using CapaDatos;
+using CapaEntidades;
 
 namespace CapaNegocio
 {
@@ -12,17 +12,20 @@ namespace CapaNegocio
     {
         private CD_Comentario objDatos = new CD_Comentario();
 
-        public bool RegistrarComentario(Comentario obj, out string mensaje)
+        public bool RegistrarComentario(int idEmprendimiento, string texto, out string mensaje)
         {
-            if (string.IsNullOrWhiteSpace(obj.TextoComentario))
+            mensaje = string.Empty;
+
+            if (string.IsNullOrWhiteSpace(texto))
             {
                 mensaje = "El comentario no puede estar vacío";
                 return false;
             }
-            return objDatos.Registrar(obj, out mensaje);
+
+            return objDatos.Registrar(idEmprendimiento, texto, out mensaje);
         }
 
-        public List<Comentario> ListarComentariosPorEmprendimiento(int idEmprendimiento)
+        public List<string> ListarComentariosPorEmprendimiento(int idEmprendimiento)
         {
             return objDatos.Listar(idEmprendimiento);
         }

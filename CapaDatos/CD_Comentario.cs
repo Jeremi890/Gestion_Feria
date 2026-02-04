@@ -13,7 +13,8 @@ namespace CapaDatos
     {
         private CD_Conexion conexion = new CD_Conexion();
 
-        public bool Registrar(Comentario obj, out string Mensaje)
+        // 1. GUARDAR (Adaptado a tu SP: @Texto)
+        public bool Registrar(int idEmprendimiento, string texto, out string Mensaje)
         {
             Mensaje = string.Empty;
             using (SqlConnection ocon = conexion.LeerCadena())
@@ -22,39 +23,52 @@ namespace CapaDatos
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrarComentario", ocon);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("Texto", obj.TextoComentario);
-                    cmd.Parameters.AddWithValue("IdEmprendimiento", obj.IdEmprendimiento);
+
+                    // IMPORTANTE: Aquí usamos los nombres exactos de TU base de datos
+                    cmd.Parameters.AddWithValue("@IdEmprendimiento", idEmprendimiento);
+                    cmd.Parameters.AddWithValue("@Texto", texto);
+
                     ocon.Open();
-                    return cmd.ExecuteNonQuery() > 0;
+                    cmd.ExecuteNonQuery();
+                    return true;
                 }
-                catch (Exception ex) { Mensaje = ex.Message; return false; }
+                catch (Exception ex)
+                {
+                    Mensaje = ex.Message;
+                    return false;
+                }
             }
         }
 
-        public List<Comentario> Listar(int idEmprendimiento)
+        // 2. LISTAR (Adaptado a tu tabla: columna 'Texto')
+        public List<string> Listar(int idEmprendimiento)
         {
-            List<Comentario> lista = new List<Comentario>();
+            List<string> lista = new List<string>();
             using (SqlConnection ocon = conexion.LeerCadena())
             {
                 try
                 {
                     SqlCommand cmd = new SqlCommand("sp_ListarComentarios", ocon);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("IdEmprendimiento", idEmprendimiento);
+                    cmd.Parameters.AddWithValue("@IdEmprendimiento", idEmprendimiento);
+
                     ocon.Open();
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
                         while (dr.Read())
                         {
-                            lista.Add(new Comentario
-                            {
-                                TextoComentario = dr["TextoComentario"].ToString(),
-                                FechaComentario = Convert.ToDateTime(dr["FechaComentario"])
-                            });
+                            // Leemos la columna "Fecha" y "Texto" de tu tabla
+                            string fecha = Convert.ToDateTime(dr["Fecha"]).ToString("dd/MM/yy HH:mm");
+                            string textoDB = dr["Texto"].ToString();
+
+                            lista.Add($"[{fecha}] Anónimo: {textoDB}");
                         }
                     }
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    lista.Add("Error: " + ex.Message);
+                }
             }
             return lista;
         }

@@ -43,10 +43,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(153, 5);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(219, 8);
             label1.Name = "label1";
-            label1.Size = new Size(471, 25);
+            label1.Size = new Size(707, 38);
             label1.TabIndex = 0;
             label1.Text = "🎓 Sistema de Gestión de Ferias de Emprendimiento";
             // 
@@ -54,10 +53,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(209, 35);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(299, 58);
             label2.Name = "label2";
-            label2.Size = new Size(350, 15);
+            label2.Size = new Size(554, 25);
             label2.TabIndex = 1;
             label2.Text = "Universidad de Guayaquil - Plataforma de Gestión y Participación";
             // 
@@ -71,10 +69,9 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button1.ForeColor = SystemColors.Highlight;
-            button1.Location = new Point(227, 73);
-            button1.Margin = new Padding(2);
+            button1.Location = new Point(324, 122);
             button1.Name = "button1";
-            button1.Size = new Size(195, 31);
+            button1.Size = new Size(279, 52);
             button1.TabIndex = 2;
             button1.Text = "MÓDULO ADMINISTRADOR";
             button1.UseVisualStyleBackColor = false;
@@ -90,12 +87,11 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button2.ForeColor = SystemColors.Highlight;
-            button2.Location = new Point(724, 73);
-            button2.Margin = new Padding(2);
+            button2.Location = new Point(1034, 122);
             button2.Name = "button2";
-            button2.Size = new Size(195, 31);
+            button2.Size = new Size(279, 52);
             button2.TabIndex = 3;
-            button2.Text = "MÓDULO ESTUDIANTE";
+            button2.Text = "VISTA DEL ESTUDIANTE";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
@@ -105,19 +101,18 @@
             PanelContenedor.AutoSize = true;
             PanelContenedor.BackColor = SystemColors.ActiveCaption;
             PanelContenedor.Dock = DockStyle.Fill;
-            PanelContenedor.Location = new Point(0, 100);
-            PanelContenedor.Margin = new Padding(2);
+            PanelContenedor.Location = new Point(0, 167);
             PanelContenedor.Name = "PanelContenedor";
-            PanelContenedor.Size = new Size(1008, 461);
+            PanelContenedor.Size = new Size(1440, 768);
             PanelContenedor.TabIndex = 4;
             // 
             // LogoUGcolor
             // 
             LogoUGcolor.Image = (Image)resources.GetObject("LogoUGcolor.Image");
-            LogoUGcolor.Location = new Point(12, 12);
+            LogoUGcolor.Location = new Point(17, 20);
             LogoUGcolor.Margin = new Padding(0);
             LogoUGcolor.Name = "LogoUGcolor";
-            LogoUGcolor.Size = new Size(100, 62);
+            LogoUGcolor.Size = new Size(143, 103);
             LogoUGcolor.SizeMode = PictureBoxSizeMode.Zoom;
             LogoUGcolor.TabIndex = 6;
             LogoUGcolor.TabStop = false;
@@ -127,16 +122,17 @@
             panel1.BackColor = Color.DimGray;
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1008, 100);
+            panel1.Size = new Size(1440, 167);
             panel1.TabIndex = 7;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Gainsboro;
-            ClientSize = new Size(1008, 561);
+            ClientSize = new Size(1440, 935);
             Controls.Add(LogoUGcolor);
             Controls.Add(PanelContenedor);
             Controls.Add(button2);
@@ -144,7 +140,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
-            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)LogoUGcolor).EndInit();

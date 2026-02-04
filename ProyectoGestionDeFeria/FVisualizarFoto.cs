@@ -1,15 +1,16 @@
-﻿using CapaEntidades;
+﻿using CapaDatos;
+using CapaEntidades;
 using CapaNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace ProyectoGestionDeFeria
 {
@@ -46,15 +47,36 @@ namespace ProyectoGestionDeFeria
         {
             lstComentarios.Items.Clear();
             lstComentarios.Items.Add($"[Sistema] Bienvenido a la galería.");
+
+            CN_Comentario objNegocio = new CN_Comentario();
+
+            List<string> lista = objNegocio.ListarComentariosPorEmprendimiento(_id);
+
+            foreach (string comentario in lista)
+            {
+                lstComentarios.Items.Add(comentario);
+            }
         }
         //=====================================================================================
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNuevoComentario.Text)) return;
 
-            lstComentarios.Items.Add($"[Tú]: {txtNuevoComentario.Text}");
-            txtNuevoComentario.Clear();
-            lstComentarios.TopIndex = lstComentarios.Items.Count - 1;
+            CN_Comentario objNegocio = new CN_Comentario();
+            string mensaje = string.Empty;
+
+            bool exito = objNegocio.RegistrarComentario(_id, txtNuevoComentario.Text, out mensaje);
+
+            if (exito)
+            {
+                CargarComentarios();
+                txtNuevoComentario.Clear();
+                lstComentarios.TopIndex = lstComentarios.Items.Count - 1;
+            }
+            else
+            {
+                MessageBox.Show("No se pudo enviar: " + mensaje);
+            }
         }
     }
     }
