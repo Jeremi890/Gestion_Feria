@@ -48,20 +48,29 @@
             panelGestionEventos = new Panel();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
+<<<<<<< HEAD
             tableLayoutPanel1 = new TableLayoutPanel();
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             ((System.ComponentModel.ISupportInitialize)dVCronogramaActual).BeginInit();
             panel1.SuspendLayout();
             panelGestionEventos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
+<<<<<<< HEAD
             tableLayoutPanel1.SuspendLayout();
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+<<<<<<< HEAD
             label1.ForeColor = SystemColors.ControlLightLight;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             label1.Location = new Point(166, 22);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
@@ -179,13 +188,20 @@
             // 
             // dVCronogramaActual
             // 
+<<<<<<< HEAD
             dVCronogramaActual.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             dVCronogramaActual.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dVCronogramaActual.Location = new Point(12, 41);
             dVCronogramaActual.Margin = new Padding(2);
             dVCronogramaActual.Name = "dVCronogramaActual";
             dVCronogramaActual.RowHeadersWidth = 62;
+<<<<<<< HEAD
             dVCronogramaActual.Size = new Size(413, 331);
+=======
+            dVCronogramaActual.Size = new Size(388, 331);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             dVCronogramaActual.TabIndex = 12;
             // 
             // label7
@@ -234,15 +250,24 @@
             panel1.Controls.Add(txtOrdenPresentacion);
             panel1.Controls.Add(txtUbicacion);
             panel1.Controls.Add(label6);
+<<<<<<< HEAD
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(315, 403);
+=======
+            panel1.Location = new Point(0, 80);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(326, 399);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panel1.TabIndex = 16;
             // 
             // panelGestionEventos
             // 
+<<<<<<< HEAD
             panelGestionEventos.BackColor = Color.FromArgb(21, 113, 59);
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panelGestionEventos.Controls.Add(pictureBox1);
             panelGestionEventos.Controls.Add(label1);
             panelGestionEventos.Dock = DockStyle.Top;
@@ -263,11 +288,15 @@
             // 
             // panel3
             // 
+<<<<<<< HEAD
             panel3.AutoScroll = true;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panel3.AutoSize = true;
             panel3.BackColor = SystemColors.ControlLightLight;
             panel3.Controls.Add(dVCronogramaActual);
             panel3.Controls.Add(label7);
+<<<<<<< HEAD
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(324, 3);
             panel3.Name = "panel3";
@@ -289,14 +318,27 @@
             tableLayoutPanel1.Size = new Size(760, 409);
             tableLayoutPanel1.TabIndex = 19;
             // 
+=======
+            panel3.Location = new Point(332, 80);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(411, 399);
+            panel3.TabIndex = 18;
+            // 
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             // FGestionEventos
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSize = true;
             ClientSize = new Size(760, 491);
+<<<<<<< HEAD
             Controls.Add(tableLayoutPanel1);
             Controls.Add(panelGestionEventos);
+=======
+            Controls.Add(panelGestionEventos);
+            Controls.Add(panel1);
+            Controls.Add(panel3);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "FGestionEventos";
@@ -310,9 +352,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+<<<<<<< HEAD
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
+=======
+            ResumeLayout(false);
+            PerformLayout();
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
         }
 
         #endregion
@@ -336,6 +383,9 @@
         private Panel panelGestionEventos;
         private Panel panel3;
         private PictureBox pictureBox1;
+<<<<<<< HEAD
         private TableLayoutPanel tableLayoutPanel1;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
     }
 }

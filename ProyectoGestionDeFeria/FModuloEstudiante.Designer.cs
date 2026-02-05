@@ -57,10 +57,17 @@
             btnConsultarEmprendimientos.FlatStyle = FlatStyle.Flat;
             btnConsultarEmprendimientos.Font = new Font("Gadugi", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnConsultarEmprendimientos.ForeColor = SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             btnConsultarEmprendimientos.Location = new Point(22, 155);
             btnConsultarEmprendimientos.Margin = new Padding(0);
             btnConsultarEmprendimientos.Name = "btnConsultarEmprendimientos";
             btnConsultarEmprendimientos.Size = new Size(192, 48);
+=======
+            btnConsultarEmprendimientos.Location = new Point(33, 232);
+            btnConsultarEmprendimientos.Margin = new Padding(0);
+            btnConsultarEmprendimientos.Name = "btnConsultarEmprendimientos";
+            btnConsultarEmprendimientos.Size = new Size(288, 72);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             btnConsultarEmprendimientos.TabIndex = 0;
             btnConsultarEmprendimientos.Text = " ";
             btnConsultarEmprendimientos.TextAlign = ContentAlignment.MiddleRight;
@@ -75,10 +82,17 @@
             btnCalendario2.FlatStyle = FlatStyle.Flat;
             btnCalendario2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCalendario2.ForeColor = SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             btnCalendario2.Location = new Point(22, 213);
             btnCalendario2.Margin = new Padding(0);
             btnCalendario2.Name = "btnCalendario2";
             btnCalendario2.Size = new Size(192, 48);
+=======
+            btnCalendario2.Location = new Point(33, 320);
+            btnCalendario2.Margin = new Padding(0);
+            btnCalendario2.Name = "btnCalendario2";
+            btnCalendario2.Size = new Size(288, 72);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             btnCalendario2.TabIndex = 1;
             btnCalendario2.Text = "CALENDARIO";
             btnCalendario2.TextAlign = ContentAlignment.MiddleRight;
@@ -93,10 +107,17 @@
             btnGaleria.FlatStyle = FlatStyle.Flat;
             btnGaleria.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGaleria.ForeColor = SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             btnGaleria.Location = new Point(22, 271);
             btnGaleria.Margin = new Padding(0);
             btnGaleria.Name = "btnGaleria";
             btnGaleria.Size = new Size(192, 48);
+=======
+            btnGaleria.Location = new Point(33, 406);
+            btnGaleria.Margin = new Padding(0);
+            btnGaleria.Name = "btnGaleria";
+            btnGaleria.Size = new Size(288, 72);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             btnGaleria.TabIndex = 3;
             btnGaleria.Text = "GALERIA";
             btnGaleria.TextAlign = ContentAlignment.MiddleRight;
@@ -112,10 +133,17 @@
             btnVotacion.FlatStyle = FlatStyle.Flat;
             btnVotacion.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnVotacion.ForeColor = SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             btnVotacion.Location = new Point(22, 330);
             btnVotacion.Margin = new Padding(0);
             btnVotacion.Name = "btnVotacion";
             btnVotacion.Size = new Size(192, 48);
+=======
+            btnVotacion.Location = new Point(33, 495);
+            btnVotacion.Margin = new Padding(0);
+            btnVotacion.Name = "btnVotacion";
+            btnVotacion.Size = new Size(288, 72);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             btnVotacion.TabIndex = 3;
             btnVotacion.Text = "VOTACION";
             btnVotacion.TextAlign = ContentAlignment.MiddleRight;
@@ -127,10 +155,16 @@
             panelModuloEstudiante.BackColor = Color.SteelBlue;
             panelModuloEstudiante.BorderStyle = BorderStyle.FixedSingle;
             panelModuloEstudiante.Dock = DockStyle.Fill;
+<<<<<<< HEAD
             panelModuloEstudiante.Location = new Point(214, 0);
             panelModuloEstudiante.Margin = new Padding(2, 2, 2, 2);
             panelModuloEstudiante.Name = "panelModuloEstudiante";
             panelModuloEstudiante.Size = new Size(665, 473);
+=======
+            panelModuloEstudiante.Location = new Point(321, 0);
+            panelModuloEstudiante.Name = "panelModuloEstudiante";
+            panelModuloEstudiante.Size = new Size(997, 710);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panelModuloEstudiante.TabIndex = 4;
             // 
             // panelizquierdo
@@ -148,17 +182,30 @@
             panelizquierdo.Dock = DockStyle.Left;
             panelizquierdo.ForeColor = SystemColors.ActiveCaptionText;
             panelizquierdo.Location = new Point(0, 0);
+<<<<<<< HEAD
             panelizquierdo.Name = "panelizquierdo";
             panelizquierdo.Size = new Size(214, 473);
+=======
+            panelizquierdo.Margin = new Padding(4, 4, 4, 4);
+            panelizquierdo.Name = "panelizquierdo";
+            panelizquierdo.Size = new Size(321, 710);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panelizquierdo.TabIndex = 5;
             panelizquierdo.Paint += panelizquierdo_Paint;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+<<<<<<< HEAD
             pictureBox4.Location = new Point(0, 328);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(66, 50);
+=======
+            pictureBox4.Location = new Point(0, 492);
+            pictureBox4.Margin = new Padding(4, 4, 4, 4);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(99, 75);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 11;
             pictureBox4.TabStop = false;
@@ -166,9 +213,16 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+<<<<<<< HEAD
             pictureBox3.Location = new Point(0, 271);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(66, 50);
+=======
+            pictureBox3.Location = new Point(0, 406);
+            pictureBox3.Margin = new Padding(4, 4, 4, 4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(99, 75);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 10;
             pictureBox3.TabStop = false;
@@ -176,9 +230,16 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+<<<<<<< HEAD
             pictureBox2.Location = new Point(0, 213);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(66, 50);
+=======
+            pictureBox2.Location = new Point(0, 320);
+            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(99, 75);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
@@ -186,9 +247,16 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+<<<<<<< HEAD
             pictureBox1.Location = new Point(0, 153);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(66, 50);
+=======
+            pictureBox1.Location = new Point(0, 230);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(99, 75);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -197,9 +265,16 @@
             // 
             panel1.BackColor = SystemColors.ControlLightLight;
             panel1.Controls.Add(button1);
+<<<<<<< HEAD
             panel1.Location = new Point(0, -4);
             panel1.Name = "panel1";
             panel1.Size = new Size(214, 138);
+=======
+            panel1.Location = new Point(0, -6);
+            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(321, 207);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panel1.TabIndex = 7;
             // 
             // button1
@@ -209,15 +284,23 @@
             button1.BackgroundImageLayout = ImageLayout.Zoom;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.Transparent;
+<<<<<<< HEAD
             button1.Location = new Point(52, 4);
             button1.Margin = new Padding(0);
             button1.Name = "button1";
             button1.Size = new Size(114, 134);
+=======
+            button1.Location = new Point(78, 6);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Size = new Size(171, 201);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             button1.TabIndex = 5;
             button1.UseVisualStyleBackColor = false;
             // 
             // FModuloEstudiante
             // 
+<<<<<<< HEAD
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSize = true;
@@ -231,6 +314,17 @@
             Name = "FModuloEstudiante";
             Text = "FModuloEstudiante";
             WindowState = FormWindowState.Maximized;
+=======
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoSize = true;
+            BackColor = SystemColors.ButtonHighlight;
+            ClientSize = new Size(1318, 710);
+            Controls.Add(panelModuloEstudiante);
+            Controls.Add(panelizquierdo);
+            Name = "FModuloEstudiante";
+            Text = "FModuloEstudiante";
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             Load += FModuloEstudiante_Load;
             panelizquierdo.ResumeLayout(false);
             panelizquierdo.PerformLayout();

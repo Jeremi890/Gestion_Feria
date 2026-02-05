@@ -43,7 +43,10 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+<<<<<<< HEAD
             button1.AutoSize = true;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             button1.BackColor = Color.FromArgb(21, 113, 59);
             button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
@@ -55,7 +58,11 @@
             button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(174, 31);
+<<<<<<< HEAD
             button1.TabIndex = 3;
+=======
+            button1.TabIndex = 2;
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             button1.Text = "MÓDULO ADMINISTRADOR";
             button1.TextAlign = ContentAlignment.MiddleRight;
             button1.UseVisualStyleBackColor = false;
@@ -64,7 +71,10 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+<<<<<<< HEAD
             button2.AutoSize = true;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             button2.BackColor = Color.FromArgb(29, 93, 117);
             button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
@@ -133,12 +143,16 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             AutoScroll = true;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             BackColor = Color.Gainsboro;
             ClientSize = new Size(959, 449);
             Controls.Add(PanelContenedor);
             Controls.Add(panel1);
             Margin = new Padding(2);
+<<<<<<< HEAD
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
@@ -146,6 +160,11 @@
             WindowState = FormWindowState.Maximized;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+=======
+            Name = "Form1";
+            Text = "Form1";
+            panel1.ResumeLayout(false);
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

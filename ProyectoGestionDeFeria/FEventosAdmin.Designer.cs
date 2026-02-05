@@ -35,6 +35,7 @@
             btnResultados = new Button();
             PanelDesarrollo = new Panel();
             panelizquierdoAdmin = new Panel();
+<<<<<<< HEAD
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -48,6 +49,21 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+=======
+            panel1 = new Panel();
+            button1 = new Button();
+            PanelDesarrollo1 = new Panel();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            panelizquierdoAdmin.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             SuspendLayout();
             // 
             // btnRegistrarEmprendimiento
@@ -147,6 +163,7 @@
             panelizquierdoAdmin.Size = new Size(214, 473);
             panelizquierdoAdmin.TabIndex = 5;
             // 
+<<<<<<< HEAD
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
@@ -187,6 +204,8 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             // panel1
             // 
             panel1.BackColor = SystemColors.ControlLightLight;
@@ -220,6 +239,49 @@
             PanelDesarrollo1.TabIndex = 6;
             PanelDesarrollo1.Paint += AbrirFormularioEnPanel_Paint;
             // 
+<<<<<<< HEAD
+=======
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(6, 150);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(62, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(6, 210);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(62, 50);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(6, 266);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(62, 50);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 9;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(6, 327);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(62, 50);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 10;
+            pictureBox4.TabStop = false;
+            // 
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             // FEventosAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -231,6 +293,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "FEventosAdmin";
+<<<<<<< HEAD
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FEventosAdmin";
             WindowState = FormWindowState.Maximized;
@@ -242,6 +305,17 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
+=======
+            Text = "FEventosAdmin";
+            Load += FEventosAdmin_Load;
+            panelizquierdoAdmin.ResumeLayout(false);
+            panelizquierdoAdmin.PerformLayout();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             ResumeLayout(false);
             PerformLayout();
         }

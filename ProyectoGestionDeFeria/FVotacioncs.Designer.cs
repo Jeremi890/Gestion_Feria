@@ -65,7 +65,11 @@
             // 
             // flowPanelVotacion
             // 
+<<<<<<< HEAD
             flowPanelVotacion.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+=======
+            flowPanelVotacion.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             flowPanelVotacion.AutoScroll = true;
             flowPanelVotacion.FlowDirection = FlowDirection.TopDown;
             flowPanelVotacion.Location = new Point(0, 82);
@@ -77,11 +81,18 @@
             // 
             // panel2
             // 
+<<<<<<< HEAD
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+=======
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panel2.BackColor = Color.FromArgb(29, 93, 117);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label2);
+<<<<<<< HEAD
+=======
+            panel2.Dock = DockStyle.Top;
+>>>>>>> 29aa1e6df64c8952b0dabdd480ff8a8558de8725
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(775, 82);
